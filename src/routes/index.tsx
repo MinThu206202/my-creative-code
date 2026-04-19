@@ -14,13 +14,13 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "devname — Full-Stack Developer Portfolio" },
+      { title: "Min Thu" },
       {
         name: "description",
         content:
           "Full-stack developer crafting fast, accessible web products. React, TypeScript, Node, and modern cloud platforms.",
       },
-      { property: "og:title", content: "devname — Full-Stack Developer Portfolio" },
+      { property: "og:title", content: "Min Thu" },
       {
         property: "og:description",
         content: "Full-stack developer crafting fast, accessible web products.",

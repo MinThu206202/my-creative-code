@@ -13,6 +13,7 @@ export const dict: Dict = {
 
   "hero.available": { en: "Available for new projects", mm: "ပရောဂျက်အသစ်များ လက်ခံနေပါသည်" },
   "hero.role": { en: "Full-Stack Developer", mm: "Full-Stack ဆော့ဖ်ဝဲရေးသား" },
+  "hero.name": { en: "Min Thu", mm: "မင်းသူ" },
   "hero.title1": { en: "Building", mm: "တည်ဆောက်နေသည်" },
   "hero.title2": { en: "delightful", mm: "နှစ်သက်ဖွယ်" },
   "hero.title3": { en: "web products.", mm: "ဝဘ်ထုတ်ကုန်များ။" },

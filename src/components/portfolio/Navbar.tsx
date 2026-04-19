@@ -37,8 +37,7 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <a href="#top" className="font-display text-xl font-bold tracking-tight flex items-center gap-1">
-          <span>Min Thu</span>
-          <span className="text-accent">.</span>
+          <span>Minn Thu</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-1 font-mono text-xs uppercase tracking-wider">

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait.jpg";
+import minthu from "@/assets/minthu.jpeg";
 
 export function Hero() {
   const { t } = useI18n();
@@ -31,7 +31,7 @@ export function Hero() {
           <h1 className="font-display font-bold text-5xl sm:text-6xl md:text-7xl leading-[0.95] tracking-tight text-balance">
             <Stagger delay={0.05}>Hi, I'm</Stagger>{" "}
             <Stagger delay={0.15}>
-              <em className="italic font-normal text-accent">Min Thu</em>
+              <em className="italic font-normal text-accent">{t("hero.name")}</em>
             </Stagger>
             <br />
             <Stagger delay={0.3}>{t("hero.title1")}</Stagger>{" "}
@@ -77,7 +77,7 @@ export function Hero() {
           <div className="absolute -inset-4 bg-accent/20 blur-2xl rounded-full" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-surface shadow-[var(--shadow-card)]">
             <img
-              src={portrait}
+              src={minthu}
               alt="Portrait of Min Thu, full-stack developer"
               width={896}
               height={1152}
