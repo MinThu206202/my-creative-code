@@ -3,13 +3,47 @@ import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 
 const groups = [
-  { titleKey: "skills.frontend" as const, items: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion"] },
-  { titleKey: "skills.backend" as const, items: ["Node.js", "PostgreSQL", "tRPC", "GraphQL", "Redis"] },
-  { titleKey: "skills.devops" as const, items: ["AWS", "Docker", "Cloudflare", "Vercel", "Terraform"] },
-  { titleKey: "skills.tools" as const, items: ["Git", "Figma", "Vitest", "Playwright", "Linear"] },
+  {
+    titleKey: "skills.frontend" as const,
+    items: [
+      { name: "React", level: 95 },
+      { name: "TypeScript", level: 90 },
+      { name: "Next.js", level: 85 },
+      { name: "Tailwind", level: 92 },
+      { name: "Framer Motion", level: 80 },
+    ],
+  },
+  {
+    titleKey: "skills.backend" as const,
+    items: [
+      { name: "Node.js", level: 90 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "tRPC", level: 78 },
+      { name: "GraphQL", level: 75 },
+      { name: "Redis", level: 70 },
+    ],
+  },
+  {
+    titleKey: "skills.devops" as const,
+    items: [
+      { name: "AWS", level: 80 },
+      { name: "Docker", level: 85 },
+      { name: "Cloudflare", level: 82 },
+      { name: "Vercel", level: 90 },
+      { name: "Terraform", level: 65 },
+    ],
+  },
+  {
+    titleKey: "skills.tools" as const,
+    items: [
+      { name: "Git", level: 95 },
+      { name: "Figma", level: 78 },
+      { name: "Vitest", level: 82 },
+      { name: "Playwright", level: 75 },
+      { name: "Linear", level: 88 },
+    ],
+  },
 ];
-
-const marquee = ["TypeScript", "React", "Node.js", "PostgreSQL", "AWS", "Docker", "Tailwind", "Next.js", "GraphQL", "Redis", "Vercel", "Cloudflare"];
 
 export function Skills() {
   const { t } = useI18n();
@@ -27,25 +61,31 @@ export function Skills() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="rounded-xl border border-border bg-card p-6"
             >
-              <h3 className="font-mono text-xs uppercase tracking-wider text-accent mb-4">{t(g.titleKey)}</h3>
-              <ul className="space-y-2 font-display text-lg">
-                {g.items.map((item) => (
-                  <li key={item}>{item}</li>
+              <h3 className="font-mono text-xs uppercase tracking-wider text-accent mb-5">
+                {t(g.titleKey)}
+              </h3>
+              <ul className="space-y-4">
+                {g.items.map((item, idx) => (
+                  <li key={item.name}>
+                    <div className="flex items-baseline justify-between mb-1.5">
+                      <span className="font-display text-base">{item.name}</span>
+                      <span className="font-mono text-xs text-muted-foreground tabular-nums">
+                        {item.level}%
+                      </span>
+                    </div>
+                    <div className="h-1.5 w-full rounded-full bg-muted overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${item.level}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: i * 0.08 + idx * 0.05, ease: "easeOut" }}
+                        className="h-full rounded-full bg-accent"
+                      />
+                    </div>
+                  </li>
                 ))}
               </ul>
             </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Marquee */}
-      <div className="mt-16 overflow-hidden border-y border-border bg-foreground text-background py-6">
-        <div className="flex gap-12 whitespace-nowrap" style={{ animation: "marquee 35s linear infinite" }}>
-          {[...marquee, ...marquee].map((item, i) => (
-            <span key={i} className="font-display text-3xl md:text-5xl font-bold flex items-center gap-12">
-              {item}
-              <span className="text-accent">★</span>
-            </span>
           ))}
         </div>
       </div>
