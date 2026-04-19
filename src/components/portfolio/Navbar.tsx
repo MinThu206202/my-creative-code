@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Moon, Sun, Languages } from "lucide-react";
+import { Moon, Sun, Languages, Menu } from "lucide-react";
 import { useTheme } from "@/lib/theme";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from "@/components/ui/sheet";
 
 const links = [
   { id: "work", key: "nav.work" as const },
@@ -16,6 +17,7 @@ export function Navbar() {
   const { theme, toggle } = useTheme();
   const { lang, setLang, t } = useI18n();
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -35,7 +37,7 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <a href="#top" className="font-display text-xl font-bold tracking-tight flex items-center gap-1">
-          <span>devname</span>
+          <span>Min Thu</span>
           <span className="text-accent">.</span>
         </a>
 
@@ -66,6 +68,38 @@ export function Navbar() {
           <Button variant="ghost" size="icon" onClick={toggle} aria-label="Toggle theme">
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
+
+          {/* Mobile sidebar trigger */}
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open menu">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-72 flex flex-col">
+              <SheetHeader>
+                <SheetTitle className="font-display text-2xl text-left">
+                  Min Thu<span className="text-accent">.</span>
+                </SheetTitle>
+              </SheetHeader>
+              <ul className="mt-8 flex flex-col gap-1 font-mono text-sm uppercase tracking-wider">
+                {links.map((l) => (
+                  <li key={l.id}>
+                    <a
+                      href={`#${l.id}`}
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-3 rounded-md text-muted-foreground hover:text-accent hover:bg-muted transition-colors"
+                    >
+                      {t(l.key)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-auto pt-6 border-t border-border font-mono text-xs text-muted-foreground">
+                © {new Date().getFullYear()} Min Thu
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </motion.header>
