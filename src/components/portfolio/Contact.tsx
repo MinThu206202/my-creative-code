@@ -51,13 +51,13 @@ export function Contact() {
     <section id="contact" className="py-24 md:py-32 border-t border-border bg-muted/30">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader kicker={t("contact.kicker")} title={t("contact.title")} />
-        <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-4 max-w-2xl mx-auto text-center"
+            className="space-y-4"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">{t("contact.lede")}</p>
             <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 font-display text-2xl hover:text-accent transition-colors">

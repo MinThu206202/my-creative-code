@@ -84,6 +84,20 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
         <div className="absolute top-4 left-4 font-mono text-xs uppercase tracking-wider text-foreground/60">
           {p.year}
         </div>
+        <div className="absolute top-4 right-4 flex items-center gap-2 text-xs">
+          <a
+            href="#"
+            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+          >
+            {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
+          </a>
+          <a
+            href="#"
+            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+          >
+            <Github className="h-3.5 w-3.5" /> {t("work.code")}
+          </a>
+        </div>
         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
           <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{p.title}</h3>
           <ArrowUpRight className="h-6 w-6 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -91,7 +105,7 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
       </div>
       <div className="p-6">
         <p className="text-muted-foreground leading-relaxed">{p.desc[lang]}</p>
-        <div className="mt-5 flex flex-wrap items-center justify-between gap-4">
+        <div className="mt-5">
           <ul className="flex flex-wrap gap-2">
             {p.tags.map((tag) => (
               <li key={tag} className="font-mono text-xs px-2.5 py-1 rounded-full bg-muted text-muted-foreground">
@@ -99,14 +113,6 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-3 text-sm">
-            <a href="#" className="inline-flex items-center gap-1 hover:text-accent transition-colors">
-              {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
-            <a href="#" className="inline-flex items-center gap-1 hover:text-accent transition-colors">
-              <Github className="h-3.5 w-3.5" /> {t("work.code")}
-            </a>
-          </div>
         </div>
       </div>
     </motion.article>
