@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { z } from "zod";
-import { Send, Github, Linkedin, Twitter, Mail, Check } from "lucide-react";
+import { Send, Mail, Check } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 import { Button } from "@/components/ui/button";
@@ -51,33 +51,18 @@ export function Contact() {
     <section id="contact" className="py-24 md:py-32 border-t border-border bg-muted/30">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader kicker={t("contact.kicker")} title={t("contact.title")} />
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 space-y-6"
+            className="space-y-4 max-w-2xl mx-auto text-center"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">{t("contact.lede")}</p>
             <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 font-display text-2xl hover:text-accent transition-colors">
               <Mail className="h-5 w-5" /> hello@example.com
             </a>
-            <div className="flex gap-2 pt-2">
-              {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
-              ].map(({ icon: Icon, href }, i) => (
-                <a
-                  key={i}
-                  href={href}
-                  className="h-10 w-10 rounded-full border border-border flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </motion.div>
 
           <motion.form
@@ -86,7 +71,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             onSubmit={onSubmit}
-            className="lg:col-span-3 rounded-2xl border border-border bg-card p-6 md:p-8 space-y-5"
+            className="w-full rounded-2xl border border-border bg-card p-6 md:p-8 space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <Field label={t("contact.name")} name="name" />
