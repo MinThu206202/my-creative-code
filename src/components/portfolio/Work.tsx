@@ -13,43 +13,43 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Nimbus Analytics",
+    title: "Delivery Management System",
     desc: {
-      en: "Real-time analytics dashboard processing 10M+ events daily. Built with React, TimescaleDB, and edge functions.",
-      mm: "နေ့စဉ် ၁၀ သန်းကျော် events များကို real-time လုပ်ဆောင်သော analytics dashboard။",
+      en: "End-to-end parcel delivery platform inspired by Royal Express — handles order intake, route assignment, driver tracking, and proof of delivery. Built from scratch with pure PHP and MySQL.",
+      mm: "Royal Express ပုံစံ parcel delivery platform — order, route assignment, driver tracking နှင့် proof of delivery အပြည့်အစုံ။ Pure PHP ဖြင့် တည်ဆောက်ထားသည်။",
     },
-    tags: ["React", "Node", "TimescaleDB", "Cloudflare"],
-    year: "2024",
+    tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+    year: "2022",
     gradient: "from-accent/40 via-accent/10 to-transparent",
   },
   {
-    title: "Loop Commerce",
+    title: "Training Management System",
     desc: {
-      en: "Headless e-commerce platform with subscription billing, inventory sync, and a custom CMS for 200+ stores.",
-      mm: "subscription, inventory sync နှင့် custom CMS ပါဝင်သော headless e-commerce platform။",
+      en: "School operations platform managing students, instructors, classes, and schedules with role-based access. Deployed on DigitalOcean with automated backups and zero-downtime releases.",
+      mm: "ကျောင်းသား၊ ဆရာ၊ အတန်းနှင့် schedule များ စီမံသည့် training platform။ DigitalOcean တွင် deploy လုပ်ထားသည်။",
     },
-    tags: ["Next.js", "Stripe", "Postgres", "AWS"],
-    year: "2024",
+    tags: ["Laravel", "MySQL", "DigitalOcean", "Blade"],
+    year: "2023",
     gradient: "from-blue-500/30 via-accent/10 to-transparent",
   },
   {
-    title: "Pulse DevTools",
+    title: "Employee Management System",
     desc: {
-      en: "Open-source observability suite for Node.js services. 4k+ stars on GitHub, used by teams at scale.",
-      mm: "Node.js services များအတွက် open-source observability suite။ GitHub ပေါ်တွင် star ၄ထောင်ကျော်။",
+      en: "Internal HR platform covering employee records, attendance, leave requests, and payroll reporting. Built on .NET with SQL Server and a clean, role-aware admin UI.",
+      mm: "ဝန်ထမ်းမှတ်တမ်း၊ အလုပ်တက်ချိန်၊ ခွင့်နှင့် လစာ report များအတွက် HR platform။ .NET ဖြင့် တည်ဆောက်ထားသည်။",
     },
-    tags: ["TypeScript", "OpenTelemetry", "Vite"],
+    tags: [".NET", "C#", "SQL Server", "Bootstrap"],
     year: "2023",
     gradient: "from-purple-500/30 via-accent/10 to-transparent",
   },
   {
-    title: "Mira Studio",
+    title: "Support Ticket Portal",
     desc: {
-      en: "AI-powered design tool that turns sketches into responsive websites. Won Product Hunt #1 of the day.",
-      mm: "ပုံကြမ်းများကို responsive ဝဘ်ဆိုဒ်အဖြစ် ပြောင်းပေးသော AI design tool။",
+      en: "Customer support portal with ticket creation, threaded replies, status workflows, and agent dashboards. React SPA backed by a Laravel REST API.",
+      mm: "Ticket ဖန်တီးခြင်း၊ status workflow နှင့် agent dashboard ပါဝင်သော customer support portal။ React + Laravel API ဖြင့် တည်ဆောက်ထားသည်။",
     },
-    tags: ["React", "Canvas", "OpenAI", "Edge"],
-    year: "2023",
+    tags: ["React", "Laravel", "REST API", "MySQL"],
+    year: "2024",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
   },
 ];
