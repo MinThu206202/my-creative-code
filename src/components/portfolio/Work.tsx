@@ -26,9 +26,10 @@ const projects: Project[] = [
       mm: "Royal Express ပုံစံ parcel delivery platform — order, route assignment, driver tracking နှင့် proof of delivery အပြည့်အစုံ။ Pure PHP ဖြင့် တည်ဆောက်ထားသည်။",
     },
     tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-    year: "2022",
+    year: "2025",
     gradient: "from-accent/40 via-accent/10 to-transparent",
     image: deliveryImg,
+    github: "https://github.com/MinThu206202/GoDelivery",
   },
   {
     title: "Training Management System",
@@ -40,6 +41,7 @@ const projects: Project[] = [
     year: "2023",
     gradient: "from-blue-500/30 via-accent/10 to-transparent",
     image: trainingImg,
+    demo: "https://www.itvisionsoft.com/",
   },
   {
     title: "Employee Management System",
@@ -51,6 +53,7 @@ const projects: Project[] = [
     year: "2023",
     gradient: "from-purple-500/30 via-accent/10 to-transparent",
     image: employeeImg,
+    github: "https://github.com/MinThu206202/EmployeesManagement",
   },
   {
     title: "Support Ticket Portal",
@@ -62,6 +65,7 @@ const projects: Project[] = [
     year: "2024",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
     image: ticketImg,
+    github: "https://github.com/MinThu206202",
   },
 ];
 
