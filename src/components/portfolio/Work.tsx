@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
+import deliveryImg from "@/assets/projects/delivery.jpg";
+import trainingImg from "@/assets/projects/training.png";
+import employeeImg from "@/assets/projects/employee.jpg";
+import ticketImg from "@/assets/projects/ticket.png";
 
 type Project = {
   title: string;
@@ -9,6 +13,7 @@ type Project = {
   tags: string[];
   year: string;
   gradient: string;
+  image: string;
 };
 
 const projects: Project[] = [
@@ -21,6 +26,7 @@ const projects: Project[] = [
     tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
     year: "2022",
     gradient: "from-accent/40 via-accent/10 to-transparent",
+    image: deliveryImg,
   },
   {
     title: "Training Management System",
@@ -31,6 +37,7 @@ const projects: Project[] = [
     tags: ["Laravel", "MySQL", "DigitalOcean", "Blade"],
     year: "2023",
     gradient: "from-blue-500/30 via-accent/10 to-transparent",
+    image: trainingImg,
   },
   {
     title: "Employee Management System",
@@ -41,6 +48,7 @@ const projects: Project[] = [
     tags: [".NET", "C#", "SQL Server", "Bootstrap"],
     year: "2023",
     gradient: "from-purple-500/30 via-accent/10 to-transparent",
+    image: employeeImg,
   },
   {
     title: "Support Ticket Portal",
@@ -51,6 +59,7 @@ const projects: Project[] = [
     tags: ["React", "Laravel", "REST API", "MySQL"],
     year: "2024",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
+    image: ticketImg,
   },
 ];
 
@@ -80,8 +89,15 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
       className="group relative rounded-2xl border border-border bg-card overflow-hidden hover:border-accent/40 transition-all duration-500"
     >
       <div className={`relative h-56 overflow-hidden bg-gradient-to-br ${p.gradient}`}>
-        <div className="absolute inset-0 grain opacity-20" />
-        <div className="absolute top-4 left-4 font-mono text-xs uppercase tracking-wider text-foreground/60">
+        <img
+          src={p.image}
+          alt={p.title}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-background/10" />
+        <div className="absolute inset-0 grain opacity-10" />
+        <div className="absolute top-4 left-4 font-mono text-xs uppercase tracking-wider text-foreground/80 bg-background/60 backdrop-blur px-2 py-1 rounded">
           {p.year}
         </div>
         <div className="absolute top-4 right-4 flex items-center gap-2 text-xs">
