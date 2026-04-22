@@ -27,12 +27,12 @@ export const dict: Dict = {
   "about.kicker": { en: "About", mm: "အကြောင်း" },
   "about.title": { en: "A developer obsessed with craft.", mm: "အရည်အသွေးကို စွဲလမ်းသော developer တစ်ဦး။" },
   "about.body1": {
-    en: "I'm a professional full-stack developer with 2+ years of hands-on experience shipping real-world web applications. I work across PHP, Laravel, .NET, C#, and React — turning business requirements into clean, reliable, and maintainable software.",
-    mm: "၂ နှစ်ကျော် လက်တွေ့အတွေ့အကြုံရှိသော professional full-stack developer တစ်ဦးဖြစ်ပါသည်။ PHP, Laravel, .NET, C# နှင့် React တို့ဖြင့် business လိုအပ်ချက်များကို သန့်ရှင်း၍ ယုံကြည်စိတ်ချရသော software များအဖြစ် တည်ဆောက်ပေးပါသည်။",
+    en: "Senior Web Developer with 2+ years of experience specializing in backend and full-stack web development using PHP and Laravel. Proven ability to design and build scalable, high-performance web applications.",
+    mm: "PHP နှင့် Laravel ဖြင့် backend နှင့် full-stack web development တွင် အထူးပြုထားသော ၂ နှစ်ကျော် အတွေ့အကြုံရှိ Senior Web Developer တစ်ဦးဖြစ်ပါသည်။ Scalable နှင့် high-performance web application များ ဒီဇိုင်းဆွဲ၍ တည်ဆောက်နိုင်စွမ်း သက်သေပြပြီးဖြစ်သည်။",
   },
   "about.body2": {
-    en: "From delivery platforms and HR systems to training portals and support ticketing tools — I focus on building end-to-end products that solve actual problems, with attention to performance, security, and a polished user experience.",
-    mm: "Delivery platform၊ HR system၊ training portal နှင့် support ticketing tool များအထိ — အမှန်တကယ် ပြဿနာများကို ဖြေရှင်းပေးနိုင်သော end-to-end ထုတ်ကုန်များကို performance, security နှင့် သပ်ရပ်သော user experience အပေါ် အာရုံစိုက်၍ တည်ဆောက်ပါသည်။",
+    en: "Experienced in real-world business systems like a Training Management System and a Delivery Management System, with a strong foundation in system architecture, clean code, and performance optimization. Skilled in OOP, SOLID principles, and modern design patterns (MVC, Repository, Service Layer), RESTful APIs, and cloud deployment on DigitalOcean — currently expanding into the .NET ecosystem for enterprise-level web and API development.",
+    mm: "Training Management System နှင့် Delivery Management System ကဲ့သို့ လက်တွေ့ business system များ တည်ဆောက်ခဲ့ဖူးပြီး system architecture, clean code နှင့် performance optimization တွင် ခိုင်မာသော အခြေခံရှိပါသည်။ OOP, SOLID principles, MVC/Repository/Service Layer ကဲ့သို့ design pattern များ၊ RESTful API နှင့် DigitalOcean cloud deployment တို့တွင် ကျွမ်းကျင်ပြီး၊ ယခုအခါ enterprise-level web/API အတွက် .NET ecosystem သို့ ချဲ့ထွင်လေ့လာနေပါသည်။",
   },
 
   "skills.kicker": { en: "Stack", mm: "နည်းပညာ" },
