@@ -6,10 +6,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   const socials = [
-    { icon: Mail, href: "mailto:mint12696@gmail.com", label: "Email", external: false },
-    { icon: Github, href: "https://github.com/MinThu206202", label: "GitHub", external: true },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/min-thu-18772734b", label: "LinkedIn", external: true },
-    { icon: Instagram, href: "#", label: "Instagram", external: true },
+    { icon: Mail, href: "mailto:mint12696@gmail.com", label: "Email", tooltip: "mint12696@gmail.com", external: false },
+    { icon: Github, href: "https://github.com/MinThu206202", label: "GitHub", tooltip: "github.com/MinThu206202", external: true },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/min-thu-18772734b/", label: "LinkedIn", tooltip: "linkedin.com/in/min-thu-18772734b", external: true },
+    { icon: Instagram, href: "#", label: "Instagram", tooltip: "Instagram", external: true },
   ];
 
   return (
