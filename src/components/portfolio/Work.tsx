@@ -14,6 +14,8 @@ type Project = {
   year: string;
   gradient: string;
   image: string;
+  github?: string;
+  demo?: string;
 };
 
 const projects: Project[] = [
