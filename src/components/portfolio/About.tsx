@@ -3,10 +3,8 @@ import { useI18n } from "@/lib/i18n";
 import { SectionHeader } from "./SectionHeader";
 
 const stats = [
-  { value: "5+", label: { en: "Years", mm: "နှစ်" } },
-  { value: "40+", label: { en: "Projects", mm: "ပရောဂျက်" } },
-  { value: "12", label: { en: "Clients", mm: "ဖောက်သည်" } },
-  { value: "∞", label: { en: "Coffee", mm: "ကော်ဖီ" } },
+  { value: "2+", label: { en: "Years", mm: "နှစ်" } },
+  { value: "4+", label: { en: "Projects", mm: "ပရောဂျက်" } },
 ];
 
 export function About() {

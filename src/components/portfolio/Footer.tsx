@@ -7,8 +7,8 @@ export function Footer() {
 
   const socials = [
     { icon: Mail, href: "mailto:mint12696@gmail.com", label: "Email", tooltip: "mint12696@gmail.com", external: false },
-    { icon: Github, href: "https://github.com/MinThu206202", label: "GitHub", tooltip: "github.com/MinThu206202", external: true },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/min-thu-18772734b/", label: "LinkedIn", tooltip: "linkedin.com/in/min-thu-18772734b", external: true },
+    { icon: Github, href: "https://github.com/MinThu206202", label: "GitHub", tooltip: "minthu206202", external: true },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/min-thu-18772734b/", label: "LinkedIn", tooltip: "minthu", external: true },
     { icon: Instagram, href: "#", label: "Instagram", tooltip: "Instagram", external: true },
   ];
 

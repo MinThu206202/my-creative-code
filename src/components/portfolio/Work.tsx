@@ -38,7 +38,7 @@ const projects: Project[] = [
       mm: "ကျောင်းသား၊ ဆရာ၊ အတန်းနှင့် schedule များ စီမံသည့် training platform။ DigitalOcean တွင် deploy လုပ်ထားသည်။",
     },
     tags: ["Laravel", "MySQL", "DigitalOcean", "Blade"],
-    year: "2023",
+    year: "2026",
     gradient: "from-blue-500/30 via-accent/10 to-transparent",
     image: trainingImg,
     demo: "https://www.itvisionsoft.com/",
@@ -50,7 +50,7 @@ const projects: Project[] = [
       mm: "ဝန်ထမ်းမှတ်တမ်း၊ အလုပ်တက်ချိန်၊ ခွင့်နှင့် လစာ report များအတွက် HR platform။ .NET ဖြင့် တည်ဆောက်ထားသည်။",
     },
     tags: [".NET", "C#", "SQL Server", "Bootstrap"],
-    year: "2023",
+    year: "2026",
     gradient: "from-purple-500/30 via-accent/10 to-transparent",
     image: employeeImg,
     github: "https://github.com/MinThu206202/EmployeesManagement",
@@ -62,7 +62,7 @@ const projects: Project[] = [
       mm: "Ticket ဖန်တီးခြင်း၊ status workflow နှင့် agent dashboard ပါဝင်သော customer support portal။ React + Laravel API ဖြင့် တည်ဆောက်ထားသည်။",
     },
     tags: ["React", "Laravel", "REST API", "MySQL"],
-    year: "2024",
+    year: "2026",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
     image: ticketImg,
     github: "https://github.com/MinThu206202",
@@ -128,10 +128,7 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
             </a>
           )}
         </div>
-        <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
-          <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{p.title}</h3>
-          <ArrowUpRight className="h-6 w-6 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </div>
+      
       </div>
       <div className="p-6">
         <div className="flex items-start justify-between gap-4">
