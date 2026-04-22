@@ -27,12 +27,12 @@ export const dict: Dict = {
   "about.kicker": { en: "About", mm: "အကြောင်း" },
   "about.title": { en: "A developer obsessed with craft.", mm: "အရည်အသွေးကို စွဲလမ်းသော developer တစ်ဦး။" },
   "about.body1": {
-    en: "I'm a full-stack engineer with 5+ years of experience building products used by thousands. I specialize in TypeScript, React, Node, and modern cloud platforms — turning complex problems into clean, intuitive software.",
-    mm: "လူသုံးထောင်နှင့်ချီသော ထုတ်ကုန်များကို တည်ဆောက်ခဲ့သည့် ၅ နှစ်ကျော်အတွေ့အကြုံရှိ full-stack engineer တစ်ဦးဖြစ်ပါသည်။ TypeScript, React, Node နှင့် modern cloud platform များတွင် အထူးပြုပါသည်။",
+    en: "I'm a professional full-stack developer with 2+ years of hands-on experience shipping real-world web applications. I work across PHP, Laravel, .NET, C#, and React — turning business requirements into clean, reliable, and maintainable software.",
+    mm: "၂ နှစ်ကျော် လက်တွေ့အတွေ့အကြုံရှိသော professional full-stack developer တစ်ဦးဖြစ်ပါသည်။ PHP, Laravel, .NET, C# နှင့် React တို့ဖြင့် business လိုအပ်ချက်များကို သန့်ရှင်း၍ ယုံကြည်စိတ်ချရသော software များအဖြစ် တည်ဆောက်ပေးပါသည်။",
   },
   "about.body2": {
-    en: "When I'm not coding, you'll find me writing about systems design, contributing to open source, or hunting for the perfect cup of coffee.",
-    mm: "ကုဒ်မရေးချိန်တွင် systems design အကြောင်းရေးခြင်း၊ open source တွင် ပါဝင်ခြင်းနှင့် ကောင်းသော ကော်ဖီရှာဖွေခြင်းတို့ကို နှစ်သက်ပါသည်။",
+    en: "From delivery platforms and HR systems to training portals and support ticketing tools — I focus on building end-to-end products that solve actual problems, with attention to performance, security, and a polished user experience.",
+    mm: "Delivery platform၊ HR system၊ training portal နှင့် support ticketing tool များအထိ — အမှန်တကယ် ပြဿနာများကို ဖြေရှင်းပေးနိုင်သော end-to-end ထုတ်ကုန်များကို performance, security နှင့် သပ်ရပ်သော user experience အပေါ် အာရုံစိုက်၍ တည်ဆောက်ပါသည်။",
   },
 
   "skills.kicker": { en: "Stack", mm: "နည်းပညာ" },
