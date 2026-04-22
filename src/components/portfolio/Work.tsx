@@ -128,10 +128,7 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
             </a>
           )}
         </div>
-        <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
-          <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{p.title}</h3>
-          <ArrowUpRight className="h-6 w-6 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </div>
+      
       </div>
       <div className="p-6">
         <div className="flex items-start justify-between gap-4">
