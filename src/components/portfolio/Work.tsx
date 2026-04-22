@@ -39,6 +39,7 @@ const projects: Project[] = [
     },
     tags: ["Laravel", "MySQL", "DigitalOcean", "Blade"],
     year: "2026",
+    gradient: "from-blue-500/30 via-accent/10 to-transparent",
     image: trainingImg,
     demo: "https://www.itvisionsoft.com/",
   },
