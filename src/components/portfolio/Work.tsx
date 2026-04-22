@@ -14,6 +14,8 @@ type Project = {
   year: string;
   gradient: string;
   image: string;
+  github?: string;
+  demo?: string;
 };
 
 const projects: Project[] = [
@@ -24,9 +26,10 @@ const projects: Project[] = [
       mm: "Royal Express ပုံစံ parcel delivery platform — order, route assignment, driver tracking နှင့် proof of delivery အပြည့်အစုံ။ Pure PHP ဖြင့် တည်ဆောက်ထားသည်။",
     },
     tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-    year: "2022",
+    year: "2025",
     gradient: "from-accent/40 via-accent/10 to-transparent",
     image: deliveryImg,
+    github: "https://github.com/MinThu206202/GoDelivery",
   },
   {
     title: "Training Management System",
@@ -38,6 +41,7 @@ const projects: Project[] = [
     year: "2023",
     gradient: "from-blue-500/30 via-accent/10 to-transparent",
     image: trainingImg,
+    demo: "https://www.itvisionsoft.com/",
   },
   {
     title: "Employee Management System",
@@ -49,6 +53,7 @@ const projects: Project[] = [
     year: "2023",
     gradient: "from-purple-500/30 via-accent/10 to-transparent",
     image: employeeImg,
+    github: "https://github.com/MinThu206202/EmployeesManagement",
   },
   {
     title: "Support Ticket Portal",
@@ -60,6 +65,7 @@ const projects: Project[] = [
     year: "2024",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
     image: ticketImg,
+    github: "https://github.com/MinThu206202",
   },
 ];
 
@@ -101,18 +107,26 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
           {p.year}
         </div>
         <div className="absolute top-4 right-4 flex items-center gap-2 text-xs">
-          <a
-            href="#"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
-          >
-            {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
-          >
-            <Github className="h-3.5 w-3.5" /> {t("work.code")}
-          </a>
+          {p.demo && (
+            <a
+              href={p.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+            >
+              {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+          )}
+          {p.github && (
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+            >
+              <Github className="h-3.5 w-3.5" /> {t("work.code")}
+            </a>
+          )}
         </div>
         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
           <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{p.title}</h3>
