@@ -39,7 +39,7 @@ export const dict: Dict = {
   "skills.title": { en: "Tools I reach for.", mm: "အသုံးပြုလေ့ရှိသော tools များ။" },
   "skills.frontend": { en: "Frontend", mm: "Frontend" },
   "skills.backend": { en: "Backend", mm: "Backend" },
-  "skills.devops": { en: "DevOps & Cloud", mm: "DevOps နှင့် Cloud" },
+  "skills.devops": { en: "Database & Cloud", mm: "Database နှင့် Cloud" },
   "skills.tools": { en: "Tooling", mm: "ကိရိယာ" },
 
   "work.kicker": { en: "Selected Work", mm: "ရွေးချယ်ထားသော လုပ်ငန်းများ" },
