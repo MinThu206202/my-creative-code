@@ -51,6 +51,7 @@ const projects: Project[] = [
     },
     tags: [".NET", "C#", "SQL Server", "Bootstrap"],
     year: "2026",
+    gradient: "from-purple-500/30 via-accent/10 to-transparent",
     image: employeeImg,
     github: "https://github.com/MinThu206202/EmployeesManagement",
   },
