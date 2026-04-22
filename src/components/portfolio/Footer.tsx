@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function Footer() {
@@ -6,11 +6,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   const socials = [
-    { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:mint12696@gmail.com", label: "Email", external: false },
+    { icon: Github, href: "https://github.com/MinThu206202", label: "GitHub", external: true },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/min-thu-18772734b", label: "LinkedIn", external: true },
+    { icon: Instagram, href: "#", label: "Instagram", external: true },
   ];
 
   return (
