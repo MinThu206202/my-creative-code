@@ -107,18 +107,26 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
           {p.year}
         </div>
         <div className="absolute top-4 right-4 flex items-center gap-2 text-xs">
-          <a
-            href="#"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
-          >
-            {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
-          >
-            <Github className="h-3.5 w-3.5" /> {t("work.code")}
-          </a>
+          {p.demo && (
+            <a
+              href={p.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+            >
+              {t("work.live")} <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+          )}
+          {p.github && (
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur border border-border hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors"
+            >
+              <Github className="h-3.5 w-3.5" /> {t("work.code")}
+            </a>
+          )}
         </div>
         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
           <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{p.title}</h3>
