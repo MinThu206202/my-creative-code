@@ -62,7 +62,7 @@ const projects: Project[] = [
       mm: "Ticket ဖန်တီးခြင်း၊ status workflow နှင့် agent dashboard ပါဝင်သော customer support portal။ React + Laravel API ဖြင့် တည်ဆောက်ထားသည်။",
     },
     tags: ["React", "Laravel", "REST API", "MySQL"],
-    year: "2024",
+    year: "2026",
     gradient: "from-orange-500/30 via-accent/10 to-transparent",
     image: ticketImg,
     github: "https://github.com/MinThu206202",
