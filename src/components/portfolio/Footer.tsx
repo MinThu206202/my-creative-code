@@ -19,16 +19,22 @@ export function Footer() {
           © {year} devname. {t("footer.rights")}
         </div>
         <div className="flex justify-center gap-2">
-          {socials.map(({ icon: Icon, href, label, external }) => (
+          {socials.map(({ icon: Icon, href, label, tooltip, external }) => (
             <a
               key={label}
               href={href}
               aria-label={label}
               target={external ? "_blank" : undefined}
               rel={external ? "noopener noreferrer" : undefined}
-              className="h-10 w-10 rounded-full border border-border flex items-center justify-center transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-accent/30"
+              className="group relative h-10 w-10 rounded-full border border-border flex items-center justify-center transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-accent/30"
             >
               <Icon className="h-4 w-4 transition-transform duration-300" />
+              <span
+                role="tooltip"
+                className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-popover text-popover-foreground border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-wider opacity-0 translate-y-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-y-0 shadow-md"
+              >
+                {tooltip}
+              </span>
             </a>
           ))}
         </div>
