@@ -19,11 +19,13 @@ export function Footer() {
           © {year} devname. {t("footer.rights")}
         </div>
         <div className="flex justify-center gap-2">
-          {socials.map(({ icon: Icon, href, label }) => (
+          {socials.map(({ icon: Icon, href, label, external }) => (
             <a
               key={label}
               href={href}
               aria-label={label}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
               className="h-10 w-10 rounded-full border border-border flex items-center justify-center transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-accent/30"
             >
               <Icon className="h-4 w-4 transition-transform duration-300" />
