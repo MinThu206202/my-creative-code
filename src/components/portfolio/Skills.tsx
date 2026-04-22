@@ -16,31 +16,28 @@ const groups = [
   {
     titleKey: "skills.backend" as const,
     items: [
-      { name: "Node.js", level: 90 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "tRPC", level: 78 },
-      { name: "GraphQL", level: 75 },
-      { name: "Redis", level: 70 },
+      { name: "PHP", level: 88 },
+      { name: "Laravel", level: 90 },
+      { name: ".NET", level: 80 },
+      { name: "C#", level: 80 },
     ],
   },
   {
     titleKey: "skills.devops" as const,
     items: [
-      { name: "AWS", level: 80 },
-      { name: "Docker", level: 85 },
-      { name: "Cloudflare", level: 82 },
-      { name: "Vercel", level: 90 },
-      { name: "Terraform", level: 65 },
+      { name: "Docker", level: 80 },
+      { name: "DigitalOcean", level: 78 },
+      { name: "MySQL", level: 90 },
+      { name: "SQL Server", level: 82 },
+      { name: "AWS", level: 70 },
     ],
   },
   {
     titleKey: "skills.tools" as const,
     items: [
-      { name: "Git", level: 95 },
+      { name: "Git", level: 92 },
       { name: "Figma", level: 78 },
-      { name: "Vitest", level: 82 },
-      { name: "Playwright", level: 75 },
-      { name: "Linear", level: 88 },
+      { name: "Postman", level: 85 },
     ],
   },
 ];
