@@ -95,7 +95,7 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-background/10" />
+        <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-background/60 to-transparent" />
         <div className="absolute inset-0 grain opacity-10" />
         <div className="absolute top-4 left-4 font-mono text-xs uppercase tracking-wider text-foreground/80 bg-background/60 backdrop-blur px-2 py-1 rounded">
           {p.year}
@@ -120,7 +120,11 @@ function ProjectCard({ p, i, lang, t }: { p: Project; i: number; lang: Lang; t: 
         </div>
       </div>
       <div className="p-6">
-        <p className="text-muted-foreground leading-relaxed">{p.desc[lang]}</p>
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight">{p.title}</h3>
+          <ArrowUpRight className="h-6 w-6 mt-1 shrink-0 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+        </div>
+        <p className="mt-3 text-muted-foreground leading-relaxed">{p.desc[lang]}</p>
         <div className="mt-5">
           <ul className="flex flex-wrap gap-2">
             {p.tags.map((tag) => (
